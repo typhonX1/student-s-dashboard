@@ -1,0 +1,418 @@
+[
+  {
+    "username": "vivaan_sharma",
+    "password": "UICIKurx",
+    "roll_no": "23CS001",
+    "reg_no": "REG20230001",
+    "department": "ECE",
+    "email": "vivaan.sharma@university.edu",
+    "marks": {
+      "Subject1": 77,
+      " Subject2": 91,
+      " Subject3": 88,
+      " Subject4": 68
+    },
+    "courses": [
+      "Eng106",
+      "Math101",
+      "Bio105"
+    ]
+  },
+  {
+    "username": "reyansh_sharma",
+    "password": "Er2s2m1z",
+    "roll_no": "23CS002",
+    "reg_no": "REG20230002",
+    "department": "CSE",
+    "email": "reyansh.sharma@university.edu",
+    "marks": {
+      "Subject1": 91,
+      " Subject2": 99,
+      " Subject3": 87,
+      " Subject4": 99
+    },
+    "courses": [
+      "CS102",
+      "Chem104",
+      "Math101"
+    ]
+  },
+  {
+    "username": "anaya_verma",
+    "password": "oyQHC7z3",
+    "roll_no": "23CS003",
+    "reg_no": "REG20230003",
+    "department": "CSE",
+    "email": "anaya.verma@university.edu",
+    "marks": {
+      "Subject1": 97,
+      " Subject2": 53,
+      " Subject3": 70,
+      " Subject4": 55
+    },
+    "courses": [
+      "Bio105",
+      "Physics103",
+      "Eng106"
+    ]
+  },
+  {
+    "username": "aditya_reddy",
+    "password": "CbUNRcg5",
+    "roll_no": "23CS004",
+    "reg_no": "REG20230004",
+    "department": "EE",
+    "email": "aditya.reddy@gmail.com",
+    "marks": {
+      "Subject1": 82,
+      " Subject2": 50,
+      " Subject3": 91,
+      " Subject4": 64
+    },
+    "courses": [
+      "Physics103",
+      "CS102",
+      "Chem104"
+    ]
+  },
+  {
+    "username": "pari_singh",
+    "password": "MiKMWfKF",
+    "roll_no": "23CS005",
+    "reg_no": "REG20230005",
+    "department": "EE",
+    "email": "pari.singh@gmail.com",
+    "marks": {
+      "Subject1": 52,
+      " Subject2": 65,
+      " Subject3": 96,
+      " Subject4": 85
+    },
+    "courses": [
+      "CS102",
+      "Bio105",
+      "Chem104"
+    ]
+  },
+  {
+    "username": "diya_mehta",
+    "password": "lKO7uahV",
+    "roll_no": "23CS006",
+    "reg_no": "REG20230006",
+    "department": "ECE",
+    "email": "diya.mehta@yahoo.com",
+    "marks": {
+      "Subject1": 77,
+      " Subject2": 67,
+      " Subject3": 98,
+      " Subject4": 92
+    },
+    "courses": [
+      "CS102",
+      "Bio105",
+      "Physics103"
+    ]
+  },
+  {
+    "username": "ayaan_reddy",
+    "password": "yZ5ddn4Z",
+    "roll_no": "23CS007",
+    "reg_no": "REG20230007",
+    "department": "EE",
+    "email": "ayaan.reddy@gmail.com",
+    "marks": {
+      "Subject1": 75,
+      " Subject2": 86,
+      " Subject3": 68,
+      " Subject4": 54
+    },
+    "courses": [
+      "Eng106",
+      "Math101",
+      "Chem104"
+    ]
+  },
+  {
+    "username": "myra_gupta",
+    "password": "Y19FdTcy",
+    "roll_no": "23CS008",
+    "reg_no": "REG20230008",
+    "department": "ECE",
+    "email": "myra.gupta@gmail.com",
+    "marks": {
+      "Subject1": 74,
+      " Subject2": 96,
+      " Subject3": 59,
+      " Subject4": 61
+    },
+    "courses": [
+      "Math101",
+      "Chem104",
+      "Bio105"
+    ]
+  },
+  {
+    "username": "krishna_mehta",
+    "password": "DHfjIUr6",
+    "roll_no": "23CS009",
+    "reg_no": "REG20230009",
+    "department": "CSE",
+    "email": "krishna.mehta@university.edu",
+    "marks": {
+      "Subject1": 83,
+      " Subject2": 97,
+      " Subject3": 53,
+      " Subject4": 77
+    },
+    "courses": [
+      "CS102",
+      "Bio105",
+      "Physics103"
+    ]
+  },
+  {
+    "username": "myra_gupta",
+    "password": "HeLqZgLH",
+    "roll_no": "23CS010",
+    "reg_no": "REG20230010",
+    "department": "EE",
+    "email": "myra.gupta@university.edu",
+    "marks": {
+      "Subject1": 73,
+      " Subject2": 75,
+      " Subject3": 83,
+      " Subject4": 58
+    },
+    "courses": [
+      "Bio105",
+      "CS102",
+      "Chem104"
+    ]
+  },
+  {
+    "username": "sai_mehta",
+    "password": "ZWBanATE",
+    "roll_no": "23CS011",
+    "reg_no": "REG20230011",
+    "department": "ME",
+    "email": "sai.mehta@university.edu",
+    "marks": {
+      "Subject1": 58,
+      " Subject2": 90,
+      " Subject3": 65,
+      " Subject4": 65
+    },
+    "courses": [
+      "Physics103",
+      "Chem104",
+      "CS102"
+    ]
+  },
+  {
+    "username": "anika_sharma",
+    "password": "YmLTCm0e",
+    "roll_no": "23CS012",
+    "reg_no": "REG20230012",
+    "department": "CE",
+    "email": "anika.sharma@gmail.com",
+    "marks": {
+      "Subject1": 81,
+      " Subject2": 71,
+      " Subject3": 94,
+      " Subject4": 62
+    },
+    "courses": [
+      "Physics103",
+      "Math101",
+      "Chem104"
+    ]
+  },
+  {
+    "username": "aditya_singh",
+    "password": "IruPtjkF",
+    "roll_no": "23CS013",
+    "reg_no": "REG20230013",
+    "department": "ECE",
+    "email": "aditya.singh@yahoo.com",
+    "marks": {
+      "Subject1": 52,
+      " Subject2": 97,
+      " Subject3": 73,
+      " Subject4": 56
+    },
+    "courses": [
+      "Bio105",
+      "CS102",
+      "Eng106"
+    ]
+  },
+  {
+    "username": "myra_sharma",
+    "password": "cWnFLNu6",
+    "roll_no": "23CS014",
+    "reg_no": "REG20230014",
+    "department": "ECE",
+    "email": "myra.sharma@university.edu",
+    "marks": {
+      "Subject1": 65,
+      " Subject2": 53,
+      " Subject3": 88,
+      " Subject4": 93
+    },
+    "courses": [
+      "Physics103",
+      "Eng106",
+      "Bio105"
+    ]
+  },
+  {
+    "username": "krishna_verma",
+    "password": "LUlktuRo",
+    "roll_no": "23CS015",
+    "reg_no": "REG20230015",
+    "department": "CSE",
+    "email": "krishna.verma@yahoo.com",
+    "marks": {
+      "Subject1": 74,
+      " Subject2": 56,
+      " Subject3": 81,
+      " Subject4": 65
+    },
+    "courses": [
+      "Math101",
+      "Physics103",
+      "Eng106"
+    ]
+  },
+  {
+    "username": "aarav_mehta",
+    "password": "ws6L4om2",
+    "roll_no": "23CS016",
+    "reg_no": "REG20230016",
+    "department": "ME",
+    "email": "aarav.mehta@university.edu",
+    "marks": {
+      "Subject1": 84,
+      " Subject2": 100,
+      " Subject3": 99,
+      " Subject4": 72
+    },
+    "courses": [
+      "Bio105",
+      "CS102",
+      "Math101"
+    ]
+  },
+  {
+    "username": "krishna_patel",
+    "password": "1Xl1APP1",
+    "roll_no": "23CS017",
+    "reg_no": "REG20230017",
+    "department": "ME",
+    "email": "krishna.patel@gmail.com",
+    "marks": {
+      "Subject1": 74,
+      " Subject2": 100,
+      " Subject3": 74,
+      " Subject4": 72
+    },
+    "courses": [
+      "Bio105",
+      "Physics103",
+      "Math101"
+    ]
+  },
+  {
+    "username": "ishaan_kapoor",
+    "password": "sfDGgGYP",
+    "roll_no": "23CS018",
+    "reg_no": "REG20230018",
+    "department": "CSE",
+    "email": "ishaan.kapoor@gmail.com",
+    "marks": {
+      "Subject1": 59,
+      " Subject2": 90,
+      " Subject3": 88,
+      " Subject4": 96
+    },
+    "courses": [
+      "Eng106",
+      "CS102",
+      "Bio105"
+    ]
+  },
+  {
+    "username": "kiara_kapoor",
+    "password": "2gcYfjDa",
+    "roll_no": "23CS019",
+    "reg_no": "REG20230019",
+    "department": "ECE",
+    "email": "kiara.kapoor@gmail.com",
+    "marks": {
+      "Subject1": 67,
+      " Subject2": 94,
+      " Subject3": 92,
+      " Subject4": 74
+    },
+    "courses": [
+      "CS102",
+      "Eng106",
+      "Physics103"
+    ]
+  },
+  {
+    "username": "pari_nair",
+    "password": "JoSPqZXV",
+    "roll_no": "23CS020",
+    "reg_no": "REG20230020",
+    "department": "ECE",
+    "email": "pari.nair@gmail.com",
+    "marks": {
+      "Subject1": 61,
+      " Subject2": 96,
+      " Subject3": 62,
+      " Subject4": 82
+    },
+    "courses": [
+      "Chem104",
+      "Physics103",
+      "Eng106"
+    ]
+  },
+  {
+    "username": "sdcf",
+    "studentid": "scvfd",
+    "email": "Srfawesrg@gmail.com",
+    "password": "asdf....1234ASDF"
+  },
+  {
+    "username": "sdcf",
+    "studentid": "scvfd",
+    "email": "Srfawesrg@gmail.com",
+    "password": "asdf....1234ASDF"
+  },
+  {
+    "username": "sdcf",
+    "studentid": "scvfd",
+    "email": "Srfawesrg@gmail.com",
+    "password": "asdf....1234ASDF"
+  },
+  {
+    "Username": "aaaaaaaaa",
+    "studentid": "aaaaaaaaaaaaaa",
+    "email": "AAAAAAAAAA@gmail.com",
+    "password": "asdf....1234ASDF"
+  },
+  {
+    "username": "aaaaaaaaa",
+    "studentid": "aaaaaaaaaaaaaa",
+    "email": "AA@gmail.com",
+    "password": "asdf....1234ASDF"
+  },
+  {
+    "Username": "aaaaaaaaa",
+    "studentid": "aaaaaa",
+    "email": "AAsssssssssssssss@gmail.com",
+    "password": "asdf....1234ASDF"
+  }
+]
