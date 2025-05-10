@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2 class="menu-title">Menu</h2>
+      <div class="menu-btns">
+        <button onclick="showSection('profile')" class="active">Profile</button>
+        <button onclick="showSection('marks')">Marks</button>
+        <button onclick="showSection('courses')">Courses</button>
+      </div>
+    </div>
+    <div class="logout">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="profile" class="section active">
+      <div class="content-box">
+        <h2>Student Profile</h2>
+      </div>
+    </div>
+
+    <div id="marks" class="section">
+      <div class="content-box">
+        <h2>Marks</h2>
+      </div>
+    </div>
+
+    <div id="courses" class="section">
+      <div class="content-box">
+        <h2>Registered Courses</h2>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+}
+  
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: linear-gradient(to bottom, #007bff, #0056b3); /* full opacity */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 15px;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.sidebar:hover {
+    width: 260px; /* expand slightly without scaling */
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.2);
+}
+  
+.menu-title {
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+  
+.menu-btns button {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2px);
+}
+  
+.menu-btns button:hover,
+.menu-btns button.active {
+    background: #ffffff;
+    color: #007bff;
+    border-color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    transform: scale(1.03);
+}
+  
+.logout {
+    text-align: center;
+}
+  
+.logout button {
+    padding: 12px 20px;
+    background-color: #ffffff;
+    color: #007bff;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+  
+.logout button:hover {
+    background-color: #cce5ff;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+  
+/* Right Content Area */
+.content {
+    flex: 1;
+    position: relative;
+    padding: 50px 60px;
+    overflow-y: auto;
+    z-index: 1;
+}
+  
+/* Background Image */
+.content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bg1.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+  
+/* Foreground Content Box */
+.content-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+  
+.content-box:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+  
+/* Section Styling */
+.section {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+  
+.section.active {
+    display: block;
+}
+  
+h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #0056b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+  
+p,
+li {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+  
+ul {
+    padding-left: 20px;
+}
+  
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 6px;
+}
+  
+</style>
+
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('.section');
+    const buttons = document.querySelectorAll('.menu-btns button');
+    
+    sections.forEach(sec => sec.classList.remove('active'));
+    buttons.forEach(btn => btn.classList.remove('active'));
+  
+    document.getElementById(sectionId).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  function logout() {
+    localStorage.removeItem("loggedInStudent");
+    window.location.href = 'index.html';
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const studentData = JSON.parse(localStorage.getItem("loggedInStudent"));
+    if (!studentData) {
+      alert("You must log in first.");
+      window.location.href = 'index.html';
+      return;
+    }
+
+    // Populate Profile
+    document.querySelector('#profile .content-box').innerHTML = `
+      <h2>Student Profile</h2>
+      <p><strong>Name:</strong> ${studentData.name}</p>
+      <p><strong>ID:</strong> ${studentData.id}</p>
+      <p><strong>Email:</strong> ${studentData.email}</p>
+      <p><strong>Department:</strong> ${studentData.department}</p>
+    `;
+
+    // Format and populate Marks
+    let marksHTML = `<h2>Marks</h2>`;
+    for (const examType in studentData.marks) {
+      marksHTML += `<h3>${examType}</h3><ul>`;
+      for (const subject in studentData.marks[examType]) {
+        marksHTML += `<li>${subject}: ${studentData.marks[examType][subject]}</li>`;
+      }
+      marksHTML += `</ul>`;
+    }
+    document.querySelector('#marks .content-box').innerHTML = marksHTML;
+
+    // Populate Courses
+    let coursesHTML = `<h2>Registered Courses</h2><ul>`;
+    studentData.courses.forEach(course => {
+      coursesHTML += `<li>${course}</li>`;
+    });
+    coursesHTML += `</ul>`;
+    document.querySelector('#courses .content-box').innerHTML = coursesHTML;
+  });
+</script>
+</body>
+</html>
