@@ -17,7 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post("/register", (req, res) => {
   const studentData = req.body;
 
-  // Read existing data
   fs.readFile("students.json", "utf8", (err, data) => {
     let students = [];
 
@@ -34,9 +33,9 @@ app.post("/register", (req, res) => {
     fs.writeFile("students.json", JSON.stringify(students, null, 2), (err) => {
       if (err) {
         console.error("Error writing file:", err);
-        res.status(500).send("Failed to save student data.");
+        res.status(500).json({ success: false, error: "Failed to save student data." });
       } else {
-        res.status(200).send("Student registered successfully.");
+        res.status(200).json({ success: true, message: "Student registered successfully." });
       }
     });
   });
