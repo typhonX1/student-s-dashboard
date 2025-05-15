@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    /* [styles are unchanged – keeping your full original styling] */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      position: relative;
+      min-height: 100vh;
+      background: url("https://media.collegedekho.com/media/img/institute/crawled_images/None/pokl3.png?width=1080") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(230, 240, 255, 0.3), rgba(255, 255, 255, 0.3));
+      filter: blur(4px);
+      z-index: -1;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+    }
+    .login_box {
+      position: relative;
+      width: 450px;
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 2px solid #007bff;
+      border-radius: 15px;
+      padding: 7.5em 2.5em 4em 2.5em;
+      color: #003366;
+      box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.3);
+      backdrop-filter: blur(8px);
+    }
+    .login-header {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #007bff;
+      width: 180px;
+      height: 70px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+    }
+    .login-header span {
+      font-size: 26px;
+      color: #ffffff;
+      font-weight: bold;
+    }
+    .login-header::before,
+    .login-header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      background: transparent;
+    }
+    .login-header::before {
+      left: -30px;
+      border-top-right-radius: 50%;
+      box-shadow: 15px 0 0 0 #007bff;
+    }
+    .login-header::after {
+      right: -30px;
+      border-top-left-radius: 50%;
+      box-shadow: -15px 0 0 0 #007bff;
+    }
+    .input_box {
+      position: relative;
+      margin: 20px 0;
+    }
+    .input-field {
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      background: transparent;
+      color: #003366;
+      padding: 0 20px;
+      border: 2px solid #007bff;
+      border-radius: 30px;
+      outline: none;
+    }
+    .label {
+      position: absolute;
+      top: 14px;
+      left: 20px;
+      transition: 0.2s;
+      pointer-events: none;
+      color: #003366;
+      background-color: transparent;
+    }
+    .input-field:focus + .label,
+    .input-field:not(:placeholder-shown) + .label {
+      top: -10px;
+      font-size: 14px;
+      background-color: #ffffff;
+      color: #007bff;
+      padding: 0 10px;
+      border-radius: 30px;
+    }
+    .input-submit {
+      width: 100%;
+      height: 50px;
+      background: #007bff;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .input-submit:hover {
+      background: #0056b3;
+      transform: scale(1.03);
+    }
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      margin-top: 10px;
+      color: #003366;
+    }
+    .remember-forgot a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .register {
+      text-align: center;
+      margin-top: 20px;
+      color: #003366;
+    }
+    .register a {
+      color: #007bff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .register a:hover {
+      text-decoration: underline;
+    }
+    .error-message {
+      color: red;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    @media only screen and (max-width: 500px) {
+      .login_box {
+        padding: 7.5em 1.5em 4em 1.5em;
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login_box">
+      <div class="login-header">
+        <span>LOGIN</span>
+      </div>
+      <form id="loginForm">
+        <div class="input_box">
+          <input type="text" id="user" class="input-field" required placeholder=" " />
+          <label for="user" class="label">Username</label>
+        </div>
+        <div class="input_box">
+          <input type="password" id="pass" class="input-field" required placeholder=" " />
+          <label for="pass" class="label">Password</label>
+        </div>
+        <div class="remember-forgot">
+          <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <div class="forgot">
+            <a href="forgot_password.html">Forgot password?</a>
+          </div>
+        </div>
+        <div class="input_box">
+          <input type="submit" class="input-submit" value="Login" />
+        </div>
+        <div class="error-message" id="errorMsg"></div>
+      </form>
+      <div class="register">
+        Don't have an account? <a href="registration.html">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const username = document.getElementById("user").value.trim();
+      const password = document.getElementById("pass").value.trim();
+      const errorMsg = document.getElementById("errorMsg");
+
+      try {
+        const response = await fetch("/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          localStorage.setItem("loggedInStudent", JSON.stringify(result.student));
+          window.location.href = "dashboard.html";
+        } else {
+          errorMsg.textContent = result.message || "Invalid login.";
+        }
+      } catch (err) {
+        console.error("Login error:", err);
+        errorMsg.textContent = "Server error during login.";
+      }
+    });
+  </script>
+</body>
+</html>

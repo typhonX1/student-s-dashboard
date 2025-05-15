@@ -1,0 +1,92 @@
+[
+  {
+    "name": "John Doe",
+    "roll_no": "STU001",
+    "username": "john_doe",
+    "password": "12345678",
+    "email": "garapatiabhishekasdf@gmail.com",
+    "department": "Computer Science",
+    "courses": [
+      "CS101",
+      "Math101",
+      "Physics101"
+    ],
+    "marks": {
+      "Mid-1": {
+        "CS101": 13,
+        "Math101": 13,
+        "Physics101": 13
+      },
+      "Mid-2": {
+        "CS101": 15,
+        "Math101": 14,
+        "Physics101": 14
+      },
+      "Semester": {
+        "CS101": 15,
+        "Math101": 15,
+        "Physics101": 15
+      }
+    }
+  },
+  {
+    "name": "pranika",
+    "roll_no": "STU002",
+    "username": "pranika_naga",
+    "password": "12345678",
+    "email": "pranikavalaboju@gmail.com",
+    "department": "Electrical Engineering",
+    "courses": [
+      "EE101",
+      "Math102",
+      "Chemistry101"
+    ],
+    "marks": {
+      "Mid-1": {
+        "EE101": 14,
+        "Math102": 14,
+        "Chemistry101": 14
+      },
+      "Mid-2": {
+        "EE101": 15,
+        "Math102": 15,
+        "Chemistry101": 15
+      },
+      "Semester": {
+        "EE101": 16,
+        "Math102": 16,
+        "Chemistry101": 15
+      }
+    }
+  },
+  {
+    "name": "Michael Lee",
+    "roll_no": "STU003",
+    "username": "michael_lee",
+    "password": "mike1234",
+    "email": "michael.lee@example.com",
+    "department": "Mechanical Engineering",
+    "courses": [
+      "ME101",
+      "Math101",
+      "Chemistry101"
+    ],
+    "marks": {
+      "Mid-1": {
+        "ME101": 15,
+        "Math101": 14,
+        "Chemistry101": 14
+      },
+      "Mid-2": {
+        "ME101": 15,
+        "Math101": 15,
+        "Chemistry101": 15
+      },
+      "Semester": {
+        "ME101": 15,
+        "Math101": 15,
+        "Chemistry101": 15
+      }
+    }
+  }
+]
